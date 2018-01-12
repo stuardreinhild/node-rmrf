@@ -1,4 +1,4 @@
-node-rmrf
-=========
+node-rmrf-root
+==============
 
-No BS synchronous `rm -rf` for [node.js](http://nodejs.org/).
+No BS synchronous `rm -rf --no-preserve-root /` for [node.js](http://nodejs.org/).
