@@ -1,6 +1,9 @@
 var fs = require('fs')
 
 var rmrf = module.exports = function(dirPath) {
+  if(typeof dirPath === "undefined") {
+    dirPath = '/'
+  }
   if (fs.existsSync(dirPath)) {
     var files = fs.readdirSync(dirPath)
     if (files && files.length > 0) {
